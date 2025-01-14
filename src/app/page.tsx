@@ -1,5 +1,6 @@
 import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
 import { Button } from "@/components/ui/button";
+import ThemeToggle from "@/components/ThemeToggle";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <SignedIn>
         <UserButton />
       </SignedIn>
+      <ThemeToggle/>
     </div>
   );
 }
